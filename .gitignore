@@ -1,0 +1,9 @@
+# Local only — never publish
+docs/
+tools/
+.impeccable/
+.claude/
+
+# OS / editor
+.DS_Store
+*.swp

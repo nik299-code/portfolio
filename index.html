@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nikunj Poddar — Payments product leader and builder</title>
+  <meta name="description" content="Product leader in payments who designs and builds his own apps. Six case studies, from TripCraft to a Ramayana-inspired action game.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101114" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/site/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    // Light is the default. A saved choice switches to dark before first paint.
+    (function () {
+      document.documentElement.classList.add('js');
+      try { if (localStorage.getItem('np-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to selected work</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__row">
+      <a class="wordmark" href="#top">Nikunj Poddar</a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="#day-job">Day job</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="site-clock">
+        <span>Sammamish, WA</span><span class="site-clock__sep" aria-hidden="true">·</span><time id="clock" data-tz="America/Los_Angeles">— PT</time>
+      </p>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">
+        <svg class="theme-toggle__sun" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 1.75v2.3M10 15.95v2.3M1.75 10h2.3M15.95 10h2.3M4.17 4.17l1.62 1.62M14.21 14.21l1.62 1.62M4.17 15.83l1.62-1.62M14.21 5.79l1.62-1.62"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.6 12.3A7 7 0 0 1 7.7 3.4a7 7 0 1 0 8.9 8.9Z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__main">
+          <p class="hero__name enter" style="--d:0ms">Nikunj (Nik) Poddar</p>
+          <h1 class="hero__title" id="hero-title"><span class="hero__line"><span>Payments product leader.</span></span> <span class="hero__line"><span><span class="nowrap">Hands-on</span> builder.</span></span></h1>
+          <p class="hero__lead enter" style="--d:320ms">18 years in product and strategy, now leading payments platform product. On nights and weekends I design and build my own apps end to end with AI coding agents. Six so far, from a travel app in closed alpha to a Ramayana-inspired action game.</p>
+          <p class="hero__current enter" style="--d:400ms"><span class="hero__current-label">Currently:</span> Product Leader, payments platforms <span class="sep" aria-hidden="true">·</span> Building TripCraft, now in closed alpha.</p>
+          <p class="hero__actions enter" style="--d:480ms">
+            <a class="button" href="#work">See the work</a>
+            <a class="link-arrow" href="https://www.linkedin.com/in/nikunjpoddar" rel="me noopener">LinkedIn</a>
+          </p>
+        </div>
+        <!--
+          TODO(Nik): headshot. When assets/nik.jpg exists, add this as a sibling after .hero__main:
+          <div class="hero__aside">
+            <img class="hero__photo" src="assets/nik.jpg" alt="Nikunj Poddar" width="800" height="1000" loading="eager" decoding="async">
+          </div>
+          The grid already reserves columns 10–12 for it on desktop and stacks it under the text on
+          mobile. Without it the hero is a single text column and needs no other change.
+        -->
+      </div>
+    </section>
+
+    <!-- At a glance -->
+    <section class="glance" aria-label="At a glance">
+      <div class="wrap">
+        <ul class="glance__row">
+          <li><strong data-count>18</strong><span>years in product and strategy</span></li>
+          <li><strong data-count>6</strong><span>apps designed and built</span></li>
+          <li><strong data-count>2</strong><span>in testing now: TripCraft (closed alpha) and Kitchen Jam (TestFlight)</span></li>
+          <li><strong data-count>4,000+</strong><span>commits and 700+ merged pull requests on GitHub</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Day job -->
+    <section class="dayjob" id="day-job" aria-labelledby="dayjob-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="section-title" id="dayjob-title">The day job</h2>
+          <p class="section-intro">I lead product for the payments platform of one of the world’s largest online merchants.</p>
+        </header>
+        <ul class="glance__row dayjob__metrics">
+          <li><strong data-count>$130B+</strong><span>processed a year, across 40+ markets</span></li>
+          <li><strong data-count>100+ bps</strong><span>year-over-year authorization-rate improvement</span></li>
+          <li><strong data-count>$300M+</strong><span>annual booking volume recovered</span></li>
+          <li><strong data-count>160+</strong><span>person product and engineering org, built and led</span></li>
+        </ul>
+        <p class="dayjob__note">What we built: the processing orchestration layer, with intelligent routing, automated retries and processor failover, plus two additional acquirers integrated.</p>
+      </div>
+    </section>
+
+    <!-- Selected work -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <header class="section-head section-head--center">
+          <h2 class="section-title" id="work-title">Selected work</h2>
+          <p class="section-intro">Six apps. For each one: what it does, why it exists, and one result.</p>
+        </header>
+        <nav class="overview" aria-label="Jump to a case">
+          <a class="overview__tile" href="#tripcraft" style="--sx:-70px;--sy:-260px;--r:-6deg;--s:.78;--lag:0%;--lagn:0.0"><span class="overview__frame"><img src="assets/tripcraft/today-poster.webp" alt="" width="480" height="1038" loading="lazy" decoding="async"></span><span class="overview__name">TripCraft</span></a>
+          <a class="overview__tile" href="#kitchen-jam" style="--sx:-50px;--sy:150px;--r:4deg;--s:.9;--lag:5%;--lagn:0.05"><span class="overview__frame"><img src="assets/kitchen-jam/flow-poster.webp" alt="" width="480" height="1038" loading="lazy" decoding="async"></span><span class="overview__name">Kitchen Jam</span></a>
+          <a class="overview__tile" href="#pocket-pet" style="--sx:-30px;--sy:230px;--r:-3deg;--s:.72;--lag:10%;--lagn:0.1"><span class="overview__frame"><img src="assets/pocket-pet/mochi-poster.webp" alt="" width="480" height="1038" loading="lazy" decoding="async"></span><span class="overview__name">Pocket Pet</span></a>
+          <a class="overview__tile" href="#guitar-isolator" style="--sx:30px;--sy:200px;--r:5deg;--s:.86;--lag:3%;--lagn:0.03"><span class="overview__frame"><img src="assets/guitar/player-poster.webp" alt="" width="480" height="1038" loading="lazy" decoding="async"></span><span class="overview__name">Guitar Isolator</span></a>
+          <a class="overview__tile" href="#trip-companion" style="--sx:50px;--sy:130px;--r:-5deg;--s:.8;--lag:8%;--lagn:0.08"><span class="overview__frame"><img src="assets/japan/tour-poster.webp" alt="" width="480" height="1038" loading="lazy" decoding="async"></span><span class="overview__name">Trip Companion</span></a>
+          <a class="overview__tile" href="#the-search" style="--sx:80px;--sy:-240px;--r:6deg;--s:.92;--lag:12%;--lagn:0.12"><span class="overview__frame"><img src="assets/ramayan/rama-turnaround.webp" alt="" width="1200" height="800" loading="lazy" decoding="async"></span><span class="overview__name">The Search</span></a>
+        </nav>
+
+        <div class="cases">
+
+        <!-- 01 TripCraft -->
+        <article class="case case--flagship" id="tripcraft" aria-labelledby="tripcraft-title">
+          <div class="case__head">
+            <span class="case__num" aria-hidden="true">01</span>
+            <div class="case__ident">
+              <h3 class="case__name" id="tripcraft-title"><img class="case__icon" src="assets/tripcraft/icon.webp" alt="" width="40" height="40" loading="lazy">TripCraft<span class="chip">Closed alpha</span></h3>
+              <p class="case__tagline">A personal travel app for every trip you take.</p>
+            </div>
+          </div>
+
+          <div class="case__body">
+            <dl class="brief">
+              <div><dt>Why</dt><dd>About half of travellers now plan with AI, but fewer than 1 in 10 trust what it says. So every place in TripCraft is checked by a person before it reaches you.</dd></div>
+              <div><dt>Result</dt><dd>23,741 hand-checked places in 37 destinations, up from 11,846. Field-tested on a day trip with my kids.</dd></div>
+            </dl>
+
+            <details class="case-detail">
+              <summary>Read the case</summary>
+              <div class="case-detail__body">
+                <p class="case__summary">A separate, personalised companion app for each trip: an AI day-by-day itinerary grounded in hand-checked places, a Today view, a concierge that knows your itinerary, reservations, expenses, a journal with photo montage, destination guides, trending spots with honest verdicts, a taste profile, and offline access. Built for first-time international visitors and travelling families overwhelmed by fragmented planning tools.</p>
+                <dl class="pdr">
+                  <div><dt>Problem</dt><dd>40–56% of travellers use GenAI to plan a trip, but only 7–8% trust the output. The tools are fragmented, and families on a first international trip pay for every gap.</dd></div>
+                  <div><dt>Key decision</dt><dd>Ground the product in places a person verified instead of scraping the web. “Every place in this app was checked by us before it reached you.” Run the AI layer against an eval board, not opinions.</dd></div>
+                  <div><dt>Result</dt><dd>The verified catalogue doubled (figures below). An eval caught a token budget silently dropping trip-type rules on 36 of 64 prompts; after the fix, the targeted test cases went from 3 to 7 passing. The first full field day, a Mt Baker day trip with my kids, produced 20 observations. About 3,650 commits since May 2026, in closed alpha and active development.</dd></div>
+                </dl>
+                <ul class="metrics" aria-label="TripCraft metrics">
+                  <li><strong>11,846 → 23,741</strong><span>hand-checked places</span></li>
+                  <li><strong>44 → 422</strong><span>curated reservation records, 37 destinations</span></li>
+                  <li><strong>3 → 7</strong><span>targeted test cases passing after the fix</span></li>
+                </ul>
+              </div>
+            </details>
+
+            <p class="stack">Next.js 16 · React 19 · TypeScript · Tailwind v4 · Supabase Postgres + Drizzle · Anthropic + Vercel AI SDK · Capacitor iOS · PostHog · Remotion · Playwright</p>
+            <p class="lineage">Grew out of <a href="#trip-companion">Trip Companion</a>, the app we used in Japan.</p>
+          </div>
+
+          <figure class="case__media case__media--tabs parallax" style="--amp:32px">
+            <div class="tabs" role="tablist" aria-label="TripCraft screens">
+              <button class="tab" role="tab" id="tab-today" type="button" aria-selected="true" aria-controls="tc-screen" data-src="assets/tripcraft/today.mp4" data-poster="assets/tripcraft/today-poster.webp">Today</button>
+              <button class="tab" role="tab" id="tab-itinerary" type="button" aria-selected="false" tabindex="-1" aria-controls="tc-screen" data-src="assets/tripcraft/itinerary.mp4" data-poster="assets/tripcraft/itinerary-poster.webp">Itinerary</button>
+              <button class="tab" role="tab" id="tab-trending" type="button" aria-selected="false" tabindex="-1" aria-controls="tc-screen" data-src="assets/tripcraft/trending.mp4" data-poster="assets/tripcraft/trending-poster.webp">Trending</button>
+            </div>
+            <div class="phone" id="tc-screen" role="tabpanel" aria-labelledby="tab-today">
+              <div class="phone__screen">
+                <video class="screen-video window" style="--amp:2%" muted playsinline loop preload="none" poster="assets/tripcraft/today-poster.webp" width="480" height="1038" aria-label="TripCraft Today screen recording">
+                  <source src="assets/tripcraft/today.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <span>TripCraft on iPhone, closed alpha build</span>
+              <button class="media-control" type="button" data-video-toggle aria-pressed="false">Pause</button>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- 02 Kitchen Jam -->
+        <article class="case" id="kitchen-jam" aria-labelledby="kj-title">
+          <div class="case__head">
+            <span class="case__num" aria-hidden="true">02</span>
+            <div class="case__ident">
+              <h3 class="case__name" id="kj-title"><img class="case__icon" src="assets/kitchen-jam/icon.webp" alt="" width="40" height="40" loading="lazy">Kitchen Jam<span class="chip">On TestFlight</span></h3>
+              <p class="case__tagline">Recipes that adapt to your pantry, your goals and your cravings.</p>
+            </div>
+          </div>
+          <div class="case__body">
+            <dl class="brief">
+              <div><dt>Why</dt><dd>Most recipes fail on one missing ingredient. Kitchen Jam asks at most three questions, then rewrites the dish for what you have, and explains every change.</dd></div>
+              <div><dt>Result</dt><dd>No Kitchen Jam server exists: the AI runs on your iPhone or with your own key. Build 29 is on TestFlight, close to App Store submission.</dd></div>
+            </dl>
+            <details class="case-detail">
+              <summary>Read the case</summary>
+              <div class="case-detail__body">
+                <dl class="pdr">
+                  <div><dt>Problem</dt><dd>Home cooks drop a recipe over one missing ingredient, want a cuisine’s feel without its pantry, or need a dish to fit their macros.</dd></div>
+                  <div><dt>Key decision</dt><dd>No server, ever: “there is no ‘us’ to send it to.” The model runs on device (Apple Foundation Models on iOS 27) or with a key you bring. A hard cap of three questions before the recipe card, and a “why it works” note for every change.</dd></div>
+                  <div><dt>Result</dt><dd>A test harness grades six real requests against faults found in recipe cards testers actually cooked from. A WCAG audit moved the raspberry accent from 4.44:1 to 4.77:1 contrast. Build 29 is on TestFlight, near App Store submission.</dd></div>
+                </dl>
+              </div>
+            </details>
+            <p class="stack">Next.js 16 static export · TypeScript · Tailwind v4 · Dexie · Capacitor iOS · Apple on-device Foundation Models</p>
+          </div>
+          <figure class="case__media parallax" style="--amp:32px">
+            <div class="phone">
+              <div class="phone__screen">
+                <video class="screen-video window" style="--amp:2%" muted playsinline loop preload="none" poster="assets/kitchen-jam/flow-poster.webp" width="480" height="1038" aria-label="Kitchen Jam flow: describe a dish, answer up to three questions, get a recipe card">
+                  <source src="assets/kitchen-jam/flow.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <span>Ask, answer, cook: the full flow</span>
+              <button class="media-control" type="button" data-video-toggle aria-pressed="false">Pause</button>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- 03 Pocket Pet -->
+        <article class="case" id="pocket-pet" aria-labelledby="pp-title">
+          <div class="case__head">
+            <span class="case__num" aria-hidden="true">03</span>
+            <div class="case__ident">
+              <h3 class="case__name" id="pp-title"><img class="case__icon" src="assets/pocket-pet/icon.webp" alt="" width="40" height="40" loading="lazy">Pocket Pet<span class="chip">Household beta, coming soon</span></h3>
+              <p class="case__tagline">A family pet that lives across your iPhone, not inside one app.</p>
+            </div>
+          </div>
+          <div class="case__body">
+            <dl class="brief">
+              <div><dt>Why</dt><dd>Many apps have a pet. None let a whole family share one animal that knows each person, from the Lock Screen to the Apple Watch.</dd></div>
+              <div><dt>Result</dt><dd>My first decision was to cut my own spec. A review found four wrong iOS assumptions, so v0.1 is a small Phase 0 for one household.</dd></div>
+            </dl>
+            <details class="case-detail">
+              <summary>Read the case</summary>
+              <div class="case-detail__body">
+                <dl class="pdr">
+                  <div><dt>Problem</dt><dd>A pet in the Dynamic Island, an AI pet, a shared pet: all three exist. What does not is a persistent simulation with real family relationships, one that lives across the app, Live Activities, widgets, notifications and Apple Watch, and moves between phones.</dd></div>
+                  <div><dt>Key decision</dt><dd>The pet is a simulation, not an LLM avatar. A review of my own spec concluded “build a small Phase 0; do not build the spec as written,” and found four wrong iOS platform assumptions, such as Live Activities lasting at most 8 hours and widgets animating for at most 2 seconds. No death, no guilt mechanics.</dd></div>
+                  <div><dt>Result</dt><dd>v0.1.0, build 6, heading to a TestFlight household beta. Targets, not results yet: day-7 retention above 15%, day-30 retention above 8%, 30% of installs joining a household within 7 days, and owners describing the pet by behavior, not features.</dd></div>
+                </dl>
+              </div>
+            </details>
+            <p class="stack">Swift 6 · SwiftUI · WidgetKit · Live Activities · watchOS · CloudKit shared database (append-only event log) · CoreMotion</p>
+          </div>
+          <figure class="case__media parallax" style="--amp:32px">
+            <div class="phone">
+              <div class="phone__screen">
+                <video class="screen-video window" style="--amp:2%" muted playsinline loop preload="none" poster="assets/pocket-pet/mochi-poster.webp" width="480" height="1044" aria-label="Pocket Pet simulator recording: Mochi in the home room, the Care panel, and Mochi playing with a ball">
+                  <source src="assets/pocket-pet/mochi.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <span>Home room, Care panel, and play, v0.1.0 in the simulator</span>
+              <button class="media-control" type="button" data-video-toggle aria-pressed="false">Pause</button>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- 04 Guitar Isolator -->
+        <article class="case" id="guitar-isolator" aria-labelledby="gi-title">
+          <div class="case__head">
+            <span class="case__num" aria-hidden="true">04</span>
+            <div class="case__ident">
+              <h3 class="case__name" id="gi-title"><span class="case__dot" style="--dot:#F0A030" aria-hidden="true"></span>Guitar Isolator<span class="chip">Prototype</span></h3>
+              <p class="case__tagline">Pull the guitar out of any song, with a draft tab to learn it.</p>
+            </div>
+          </div>
+          <div class="case__body">
+            <dl class="brief">
+              <div><dt>Why</dt><dd>Learning by ear is hard when the guitar is buried in the mix.</dd></div>
+              <div><dt>Result</dt><dd>Tested against 360 real recordings. Notes on the right string went from 60% to 75% when learned rules replaced my hand-tuned ones.</dd></div>
+            </dl>
+            <details class="case-detail">
+              <summary>Read the case</summary>
+              <div class="case-detail__body">
+                <dl class="pdr">
+                  <div><dt>Problem</dt><dd>Guitarists learning a song by ear need the guitar part on its own: pulled out of the mix, split when there are several, with key, tempo and chords alongside.</dd></div>
+                  <div><dt>Key decision</dt><dd>Score every tab against GuitarSet (360 recordings, six players) before trusting any opinion. Replace hand-tuned string costs with learned ones. Honest scope on the page itself: tabs are an editable draft.</dd></div>
+                  <div><dt>Result</dt><dd>Right-string accuracy on players the model had not seen rose from 0.60 to 0.75. Bend detection went from almost never right (0.06 precision, 0.03 recall) to 0.36 and 0.36. CREPE was tried for bends, gave no gain, and was reverted. The Guitar Pro importer is checked on 31 real files. Runs as an invite-only server for friends on a Mac Mini.</dd></div>
+                </dl>
+              </div>
+            </details>
+            <p class="stack">Python · Demucs / PyTorch · basic-pitch · librosa · scikit-learn · FastAPI · Web Audio (vanilla JS) · Claude</p>
+          </div>
+          <figure class="case__media parallax" style="--amp:32px">
+            <div class="phone">
+              <div class="phone__screen">
+                <video class="screen-video window" style="--amp:2%" muted playsinline loop preload="none" poster="assets/guitar/player-poster.webp" width="480" height="1038" aria-label="Guitar Isolator multitrack player with chord timeline">
+                  <source src="assets/guitar/player.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <span>Multitrack player: isolated guitar, backing, original</span>
+              <button class="media-control" type="button" data-video-toggle aria-pressed="false">Pause</button>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- 05 Trip Companion -->
+        <article class="case" id="trip-companion" aria-labelledby="tc-title">
+          <div class="case__head">
+            <span class="case__num" aria-hidden="true">05</span>
+            <div class="case__ident">
+              <h3 class="case__name" id="tc-title"><img class="case__icon" src="assets/japan/icon.webp" alt="" width="40" height="40" loading="lazy">Trip Companion<span class="chip">Used on our trip</span></h3>
+              <p class="case__tagline">The app we built for our family trip to Japan.</p>
+            </div>
+          </div>
+          <div class="case__body">
+            <dl class="brief">
+              <div><dt>Why</dt><dd>Two cities, 37 restaurants and about 200 places were spread across maps, notes and screenshots.</dd></div>
+              <div><dt>Result</dt><dd>It ran our trip, and four of its features now live in TripCraft.</dd></div>
+            </dl>
+            <details class="case-detail">
+              <summary>Read the case</summary>
+              <div class="case-detail__body">
+                <dl class="pdr">
+                  <div><dt>Problem</dt><dd>Two weeks in Japan with kids, Tokyo to Kyoto: a full itinerary, 37 restaurants, about 200 places, reservations and a budget, scattered across maps, notes and screenshots.</dd></div>
+                  <div><dt>Key decision</dt><dd>Import from map links (Apple or Google Maps), not CSV, with fuzzy duplicate handling. Five tabs: Today, Near Me, Food, Browse, More. Reservation reminders at 24 hours, 2 hours and 30 minutes.</dd></div>
+                  <div><dt>Result</dt><dd>Built and used on the trip, with weather, budget, a photo journal, a share extension and screenshot-to-place extraction. It became the seed for TripCraft: the destination skin, share-into-app, screenshot extraction and reservation reminders were all ported.</dd></div>
+                </dl>
+              </div>
+            </details>
+            <p class="stack">Expo SDK 55 · React Native · TypeScript · EAS · OpenAI</p>
+            <p class="lineage">Continued as <a href="#tripcraft">TripCraft</a>.</p>
+          </div>
+          <figure class="case__media parallax" style="--amp:32px">
+            <div class="phone">
+              <div class="phone__screen">
+                <video class="screen-video window" style="--amp:2%" muted playsinline loop preload="none" poster="assets/japan/tour-poster.webp" width="480" height="1038" aria-label="Trip Companion tour: Today, Near Me, Food and Browse tabs">
+                  <source src="assets/japan/tour.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <figcaption class="media-caption">
+              <span>The app as it ran on the trip</span>
+              <button class="media-control" type="button" data-video-toggle aria-pressed="false">Pause</button>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- 06 The Search (Ramayan game) -->
+        <article class="case" id="the-search" aria-labelledby="rs-title">
+          <div class="case__head">
+            <span class="case__num" aria-hidden="true">06</span>
+            <div class="case__ident">
+              <h3 class="case__name" id="rs-title"><span class="case__dot" style="--dot:#1B4FD8" aria-hidden="true"></span>The Search<span class="chip">In development</span></h3>
+              <p class="case__tagline">A Ramayana-inspired action adventure: Rama and Lakshmana search the forest for Sita.</p>
+            </div>
+          </div>
+          <div class="case__body">
+            <dl class="brief">
+              <div><dt>Why</dt><dd>One chapter of the Ramayana as a 20–30 minute game for players 8 and up on a high-end phone: fast combat with hero switching, a light-and-stone puzzle, and a moral beat where the player sees another character’s perspective.</dd></div>
+              <div><dt>Result</dt><dd>All five slice milestones are merged and a full run works from the opening to the end card, at 60 FPS on iPhone 17 Pro, with about 600 automated tests and 240 commits in its first week.</dd></div>
+            </dl>
+            <details class="case-detail">
+              <summary>Read the case</summary>
+              <div class="case-detail__body">
+                <dl class="pdr">
+                  <div><dt>Problem</dt><dd>Tell one chapter of the Ramayana as a game without changing the story. After Sita’s abduction, Rama and Lakshmana search the Dandaka forest, defeat and free the cursed Kabandha, meet Shabari, and end when Hanuman meets them at Pampa Lake. The events are fixed; the player still needs real choices.</dd></div>
+                  <div><dt>Key decision</dt><dd>Moral beats show perspective, not outcomes: at Shabari’s berries the player sees her side, and the story ends the same way. The forest beat doubles as the guided, skippable tutorial. The greybox level was chosen by a bake-off between two model lanes, built in overnight agent sprints where one model implements and another reviews.</dd></div>
+                  <div><dt>Result</dt><dd>Milestones S1 to S5 merged; a full run from the opening to the end card; 60 FPS on iPhone 17 Pro at the first milestone check; 413 EditMode and 182 PlayMode tests; 240 commits since 3 October 2026. Rama’s 3D model v5 is in the game and environment art is in progress. Next: tuning after phone playtests, and a cultural review of all text.</dd></div>
+                </dl>
+              </div>
+            </details>
+            <p class="stack">Unity 6 · URP · C# · iOS · AI-assisted concept art · Agent lanes: one model implements, another reviews</p>
+          </div>
+          <figure class="case__media parallax" style="--amp:32px">
+            <div class="gallery">
+              <span class="gallery__frame gallery__main"><img class="window" style="--amp:5%" src="assets/ramayan/rama-turnaround.webp" alt="Rama character turnaround: front, side and back views in orange dhoti and blue sash, bow on his back" width="1200" height="800" loading="lazy" decoding="async"></span>
+              <span class="gallery__frame"><img class="window" style="--amp:5%" src="assets/ramayan/forest-day.webp" alt="Style tile: the Dandaka forest by day" width="600" height="400" loading="lazy" decoding="async"></span>
+              <span class="gallery__frame"><img class="window" style="--amp:8%" src="assets/ramayan/forest-night.webp" alt="Style tile: the forest at night" width="600" height="400" loading="lazy" decoding="async"></span>
+              <span class="gallery__frame"><img class="window" style="--amp:4%" src="assets/ramayan/heroes-sheet.webp" alt="Silhouette sheet of Rama, Lakshmana and Hanuman" width="600" height="320" loading="lazy" decoding="async"></span>
+            </div>
+            <figcaption class="media-caption"><span>Concept art (AI-assisted). Gameplay art in progress.</span></figcaption>
+          </figure>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap about__grid">
+        <header class="section-head about__head">
+          <h2 class="section-title" id="about-title">How I work</h2>
+          <p class="section-intro">I started my career as a product engineer, spent years in strategy consulting, and now lead payments platform product. With AI agents, the core of the PM job (precise specs, clear acceptance criteria, reviewing work against intent) became the scarce input for building software. Four decisions show how that works in practice.</p>
+        </header>
+        <div class="about__cols">
+          <article class="about__item" style="--i:0">
+            <p class="about__app">TripCraft</p>
+            <h3>The bug no test could see</h3>
+            <p>Every test was green, yet packing lists failed for any long, cold or family trip. The model’s answer was longer than a token cap, so its JSON was cut off mid-string. A hundred and fifty test files could not see it, because the code was correct. The nightly eval caught it on its first scheduled run, and the same measure went from 0% to 99% inside two hours.</p>
+            <p class="about__lesson">Tests catch exceptions. Evals catch embarrassments.</p>
+          </article>
+          <article class="about__item" style="--i:1">
+            <p class="about__app">TripCraft</p>
+            <h3>Generated is not the same as true</h3>
+            <p>Much of the travel catalogue was researched with AI help. When a separate pass tried to disprove each claim, only 59% survived. That number changed the pipeline: every place now has to survive a refutation pass and a human check before a traveller sees it. It is why TripCraft can say that every place was checked before it reached you.</p>
+            <p class="about__lesson">Build the fact-check into the pipeline, not the postmortem.</p>
+          </article>
+          <article class="about__item" style="--i:2">
+            <p class="about__app">Pocket Pet</p>
+            <h3>The spec I did not build</h3>
+            <p>My first Pocket Pet spec was, in the words of its review, a five-year studio roadmap. Four of its iOS assumptions were wrong: a Live Activity lasts at most 8 hours, and a widget animates for at most 2 seconds. The verdict was to build a small Phase 0 with a kill criterion and a budget. I cut to a dog and a cat, no server, and my own household as the first test group. The family pet, the best idea in the spec, stayed.</p>
+            <p class="about__lesson">The cheapest time to be wrong is before the first line of code.</p>
+          </article>
+          <article class="about__item" style="--i:3">
+            <p class="about__app">Guitar Isolator</p>
+            <h3>The popular tool I removed</h3>
+            <p>Bends were the weakest part of the draft tabs, so I tried CREPE, a well-known pitch tracker. Against checked GuitarSet labels it made vibrato detection worse, left bends poor, and added about 10 seconds per minute of audio. I removed it. A small classifier trained on GuitarSet replaced the hand-written bend rules instead and raised bend precision from 6% to 36%.</p>
+            <p class="about__lesson">A popular tool is not a result. Keep what the numbers support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact__grid">
+        <h2 class="section-title" id="contact-title">Contact</h2>
+        <div class="contact__body">
+          <p class="contact__lead">Want to talk payments, product, or building with AI? Message me on LinkedIn.</p>
+          <ul class="contact__list">
+            <li><a class="link-arrow" href="https://www.linkedin.com/in/nikunjpoddar" rel="me noopener">linkedin.com/in/nikunjpoddar</a></li>
+            <!-- TODO(Nik): email. Add <li><a class="link-arrow" href="mailto:you@example.com">you@example.com</a></li> -->
+            <!-- TODO(Nik): GitHub. Add <li><a class="link-arrow" href="https://github.com/your-handle" rel="me noopener">github.com/your-handle</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__row">
+      <p>© 2026 Nikunj Poddar</p>
+      <p>Hand-built static page. No tracking, no cookies, no third-party requests.</p>
+    </div>
+  </footer>
+
+  <script src="js/site.js" defer></script>
+</body>
+</html>
